@@ -48,8 +48,9 @@ def getPrimitive(Mass, Momx, Momy, Energy, gamma, vol):
         P        is matrix of cell pressures
     """
     rho = Mass / vol
-    vx = Momx / rho / vol
-    vy = Momy / rho / vol
+    # Momentum and mass already include the same cell volume.
+    vx = Momx / Mass
+    vy = Momy / Mass
     P = (Energy / vol - 0.5 * rho * (vx**2 + vy**2)) * (gamma - 1)
 
     return rho, vx, vy, P
