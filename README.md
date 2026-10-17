@@ -1,5 +1,9 @@
 # Finite Volume Lab
 
+> **Superseded (2026-10-18):** This derivative edition is retired in favor of the wholly original implementation [shockline-euler](https://github.com/khalil-official/shockline-euler). The repository stays public and read-only (archived); its history, credits, tests, and calendar records are preserved unchanged.
+
+
+
 Compressible finite-volume Euler solver for the Kelvin–Helmholtz instability,
 with conservation and flux verification tests.
 
